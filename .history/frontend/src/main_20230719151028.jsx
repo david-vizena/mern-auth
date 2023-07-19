@@ -15,8 +15,10 @@ import LoginScreen from './screens/LoginScreen.jsx';
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path='/' element={<App />}>
-			<Route index={true} path='/' element={<HomeScreen />} />
-			<Route path='/login' element={<LoginScreen />} />
+			<Route indext={true} path='/' element={<HomeScreen />} />
+		</Route>
+		<Route path='/' element={<App />}>
+			<Route indext={true} path='/' element={<HomeScreen />} />
 		</Route>
 	)
 );
